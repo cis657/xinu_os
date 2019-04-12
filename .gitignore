@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+.vscode
+xinu-x86-vm/compile/version
+xinu-x86-vm/compile/vn
