@@ -57,3 +57,7 @@ dkms.conf
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# XINU files
+!src/compile/version
+!src/compile/vn

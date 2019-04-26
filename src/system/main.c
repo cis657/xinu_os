@@ -8,13 +8,13 @@
 void m1();
 void m2();
 
-sid32 mutex;
+sid32 sem;
 pid32 m1pid, m2pid;
 
 int main(void){
 	
 	// single semaphore
-	mutex = semcreate(0);
+	sem = semcreate(0);
 
     // create two processes that have equal priority
 	m1pid = create(m1, 1024, 20, "m1", 0);
@@ -26,6 +26,30 @@ int main(void){
 }
 
 void m2(){
+	int32 i;
+	int32 k=101;
+
+	for(i = k; i >= 0; i--){
+		kprintf("\n");
+		for(k = i; k > k-3; k--)
+		    kprintf("%d - \n", k);
+		signal(sem);
+		
+		
+	}
+}
+
+void m1(){
+	int32 i, k;
+	
+	for(i = 1; i <= 20; i++){
+		wait(sem);
+        for(k = i; k < i+2; k++)
+		    kprintf("    %d - \n", k);
+	}
+}
+
+/*void m2(){
 
     int32 k;
 
@@ -86,4 +110,4 @@ void m1(){
 		// increment j by two for the next set of two
 		j+=2;
 	}
-}
+}*/
