@@ -50,3 +50,14 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settigns.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Xinu files
+!src/compile/version
+!src/compile/vn
