@@ -61,3 +61,4 @@ dkms.conf
 # Xinu files
 src/compile/version
 src/compile/vn
+src/compile/output
