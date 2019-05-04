@@ -62,3 +62,6 @@ dkms.conf
 version
 vn
 output
+src/compile/version
+src/compile/vn
+src/compile/output
