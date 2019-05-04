@@ -59,6 +59,6 @@ dkms.conf
 !.vscode/extensions.json
 
 # Xinu files
-src/compile/version
-src/compile/vn
-src/compile/output
+version
+vn
+output

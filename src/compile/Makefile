@@ -65,8 +65,8 @@ SYSTEM_CFILES =								\
 	resume.c	sched_cntl.c 	seek.c		semcount.c	\
 	semcreate.c	semdelete.c	semreset.c	send.c		\
 	signal.c	signaln.c	sleep.c		suspend.c	\
-	unsleep.c	userret.c	wait.c		wakeup.c	\
-	write.c		xdone.c		yield.c		evec.c
+	unsleep.c	userret.c	wait.c	wakeup.c	write.c		\
+	xdone.c		yield.c		evec.c	runforever.c
 
 SYSTEM_SFULL = ${SYSTEM_SFILES:%=../system/%}
 SYSTEM_CFULL = ${SYSTEM_CFILES:%=../system/%}
@@ -104,7 +104,7 @@ SHELL_CFILES +=								\
 	xsh_argecho.c	xsh_cat.c	xsh_clear.c 	xsh_uptime.c	\
 	xsh_echo.c	xsh_exit.c	xsh_devdump.c	xsh_help.c	\
 	xsh_kill.c	xsh_memdump.c	xsh_ps.c 	xsh_sleep.c 	\
-	xsh_memstat.c  	
+	xsh_memstat.c	xsh_create.c 	
 
 SHELL_CFULL  = ${SHELL_CFILES:%=../shell/%}
 

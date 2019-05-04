@@ -320,3 +320,6 @@ extern	void	xdone(void);
 
 /* in file yield.c */
 extern	syscall	yield(void);
+
+/* in file runforever.c */
+extern void runforever(pri16);
