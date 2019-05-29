@@ -320,3 +320,6 @@ extern	void	xdone(void);
 
 /* in file yield.c */
 extern	syscall	yield(void);
+
+/* in file mycreate.c */
+extern void mycreate(void);
